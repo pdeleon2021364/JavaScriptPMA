@@ -1,0 +1,217 @@
+[2026-06-01 09:24:04 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 09:24:05 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 09:24:05 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 09:24:05 ERR] Hosting failed to start {"EventId":{"Id":11,"Name":"HostedServiceStartupFaulted"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-06-01 09:25:52 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 09:25:53 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 09:25:53 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 09:25:53 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:08:18 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 2.8918 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000001","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:18 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"793e4d7e-6cc9-4c1e-b6d9-11a822db82e0","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVUVV7598C:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:18 INF] HTTP POST /api/v1/auth/login responded 200 in 706.3310 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000002","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:20 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.3327 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000003","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:20 INF] HTTP GET /api/v1/auth/users responded 200 in 110.1674 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000004","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:53 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"793e4d7e-6cc9-4c1e-b6d9-11a822db82e0","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVUVV7598C:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:08:53 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVUVV7598C:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVUVV7598C"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method170(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:08:53 INF] HTTP POST /api/v1/auth/login responded 401 in 33.8168 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000005","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:09:04 INF] HTTP OPTIONS /api/v1/auth/forgot-password responded 204 in 0.0843 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000006","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:09:05 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"cb116b47-6ec1-41ef-a5a8-219574e57438","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVUVV7598C:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVUVV7598C"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 00721157ae682-7e175de2453sm42262497b3.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:09:05 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"cb116b47-6ec1-41ef-a5a8-219574e57438","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVUVV7598C:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVUVV7598C"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 00721157ae682-7e175de2453sm42262497b3.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:09:05 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"cb116b47-6ec1-41ef-a5a8-219574e57438","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVUVV7598C:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVUVV7598C"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 00721157ae682-7e175de2453sm42262497b3.6 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 00721157ae682-7e175de2453sm42262497b3.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 377
+[2026-06-01 10:09:05 INF] HTTP POST /api/v1/auth/forgot-password responded 200 in 962.0989 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVUVV7598C:00000007","ConnectionId":"0HNLVUVV7598C"}
+[2026-06-01 10:13:31 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:13:31 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:13:32 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:13:32 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:13:52 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV978:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV978"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-59b97abb8b8sm6351775e0c.8 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:13:52 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV978:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV978"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-59b97abb8b8sm6351775e0c.8 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:13:52 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV978:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV978"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-59b97abb8b8sm6351775e0c.8 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-59b97abb8b8sm6351775e0c.8 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 379
+[2026-06-01 10:13:52 ERR] HTTP POST /api/v1/auth/forgot-password responded 503 in 1216.1797 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV978:00000001","ConnectionId":"0HNLVV32GV978"}
+[2026-06-01 10:16:30 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 2.5451 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000001","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:30 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"81d983a7-d084-4d67-9c5b-700ea2b0d89d","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVV32GV979:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:30 INF] HTTP POST /api/v1/auth/login responded 200 in 465.5303 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000002","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:32 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.1028 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000003","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:32 INF] HTTP GET /api/v1/auth/users responded 200 in 75.0054 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000004","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:57 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"81d983a7-d084-4d67-9c5b-700ea2b0d89d","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVV32GV979:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:16:57 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVV32GV979:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV32GV979"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method623(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:16:57 INF] HTTP POST /api/v1/auth/login responded 401 in 17.3072 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000005","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:17:08 INF] HTTP OPTIONS /api/v1/auth/forgot-password responded 204 in 0.0998 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000006","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:17:09 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c8c6958f31sm5308903137.12 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:17:09 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c8c6958f31sm5308903137.12 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:17:09 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000007","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c8c6958f31sm5308903137.12 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c8c6958f31sm5308903137.12 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 379
+[2026-06-01 10:17:09 ERR] HTTP POST /api/v1/auth/forgot-password responded 503 in 707.3661 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000007","ConnectionId":"0HNLVV32GV979"}
+[2026-06-01 10:17:16 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000008","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a204f45dc8sm1919753e0c.11 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:17:16 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000008","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a204f45dc8sm1919753e0c.11 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:17:16 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"8e0113df-e6ac-444a-add8-df8b66c076cd","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV32GV979:00000008","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV32GV979"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a204f45dc8sm1919753e0c.11 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a204f45dc8sm1919753e0c.11 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 379
+[2026-06-01 10:17:16 ERR] HTTP POST /api/v1/auth/forgot-password responded 503 in 659.6713 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV32GV979:00000008","ConnectionId":"0HNLVV32GV979"}

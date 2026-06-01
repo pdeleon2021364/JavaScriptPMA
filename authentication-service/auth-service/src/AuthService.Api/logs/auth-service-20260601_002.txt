@@ -1,0 +1,533 @@
+[2026-06-01 10:19:24 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:19:25 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:19:26 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:19:26 ERR] Hosting failed to start {"EventId":{"Id":11,"Name":"HostedServiceStartupFaulted"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-06-01 10:19:31 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:19:32 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:19:32 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:19:32 ERR] Hosting failed to start {"EventId":{"Id":11,"Name":"HostedServiceStartupFaulted"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-06-01 10:20:42 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:20:43 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:20:43 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:20:43 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:21:02 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"092890cc-311b-4795-be5c-44abf888bead","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVV72UQO7S:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:21:02 INF] HTTP POST /api/v1/auth/login responded 200 in 740.2361 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV72UQO7S:00000001","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:21:04 INF] HTTP GET /api/v1/auth/users responded 200 in 108.2293 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV72UQO7S:00000002","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:21:19 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"092890cc-311b-4795-be5c-44abf888bead","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVV72UQO7S:00000003","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:21:19 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVV72UQO7S:00000003","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVV72UQO7S"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method170(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:21:19 INF] HTTP POST /api/v1/auth/login responded 401 in 34.3433 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV72UQO7S:00000003","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:21:32 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"c5b6ff7a-42a8-46f6-b6bd-dd93ce5373c5","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV72UQO7S:00000004","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV72UQO7S"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c893de04c9sm5035066137.7 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:21:32 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"c5b6ff7a-42a8-46f6-b6bd-dd93ce5373c5","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV72UQO7S:00000004","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV72UQO7S"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c893de04c9sm5035066137.7 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:21:32 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"c5b6ff7a-42a8-46f6-b6bd-dd93ce5373c5","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVV72UQO7S:00000004","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVV72UQO7S"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c893de04c9sm5035066137.7 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6c893de04c9sm5035066137.7 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 379
+[2026-06-01 10:21:32 ERR] HTTP POST /api/v1/auth/forgot-password responded 503 in 900.0258 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVV72UQO7S:00000004","ConnectionId":"0HNLVV72UQO7S"}
+[2026-06-01 10:26:00 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:26:01 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:26:02 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:26:02 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:29:45 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:29:46 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:29:47 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:29:47 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:31:08 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 3.0113 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000001","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:09 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"e790bb72-0d1b-43c3-b414-02c7be0cc72b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVCNO7DTB:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:09 INF] HTTP POST /api/v1/auth/login responded 200 in 867.9918 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000002","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:10 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.3001 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000003","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:10 INF] HTTP GET /api/v1/auth/users responded 200 in 111.9770 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000004","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:33 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"e790bb72-0d1b-43c3-b414-02c7be0cc72b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVCNO7DTB:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:33 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVCNO7DTB:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method170(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:31:33 INF] HTTP POST /api/v1/auth/login responded 401 in 43.6899 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000005","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:34 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"e790bb72-0d1b-43c3-b414-02c7be0cc72b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVCNO7DTB:00000006","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:34 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVCNO7DTB:00000006","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method170(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:31:34 INF] HTTP POST /api/v1/auth/login responded 401 in 8.7623 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000006","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:35 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"e790bb72-0d1b-43c3-b414-02c7be0cc72b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVCNO7DTB:00000007","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:35 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVCNO7DTB:00000007","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVCNO7DTB"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method170(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:31:35 INF] HTTP POST /api/v1/auth/login responded 401 in 9.3910 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000007","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:55 INF] HTTP POST /api/v1/auth/login responded 429 in 1.3308 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000008","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:57 INF] HTTP POST /api/v1/auth/login responded 429 in 0.1878 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:00000009","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:31:58 INF] HTTP POST /api/v1/auth/login responded 429 in 0.1342 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVCNO7DTB:0000000A","ConnectionId":"0HNLVVCNO7DTB"}
+[2026-06-01 10:32:34 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:32:35 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:32:36 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:32:36 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:33:28 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"9f9d2699-479d-486d-8f97-fd2d4d3a05cf","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:33:29 INF] HTTP POST /api/v1/auth/login responded 200 in 374.7358 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000001","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:33:30 INF] HTTP GET /api/v1/auth/users responded 200 in 110.0268 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000002","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:09 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 1.3843 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000003","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:09 INF] User pdeleon registered successfully {"EventId":{"Id":1001,"Name":"LogUserRegistered"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"08260051-7cfb-4d9d-94b7-32055544999d","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000004","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:09 INF] HTTP POST /api/v1/auth/register responded 201 in 155.7133 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000004","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:09 INF] HTTP GET /api/v1/auth/users responded 200 in 8.0341 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000005","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:12 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"08260051-7cfb-4d9d-94b7-32055544999d","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000004","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVE1DK55A"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6bfbaa7fcd6sm6939034137.5 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:34:12 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"08260051-7cfb-4d9d-94b7-32055544999d","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000004","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVE1DK55A"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6bfbaa7fcd6sm6939034137.5 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:34:12 ERR] Failed to send verification email {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"08260051-7cfb-4d9d-94b7-32055544999d","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000004","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVE1DK55A"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6bfbaa7fcd6sm6939034137.5 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 ada2fe7eead31-6bfbaa7fcd6sm6939034137.5 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendEmailVerificationAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 29
+   at AuthService.Application.Services.AuthService.<>c__DisplayClass9_0.<<RegisterAsync>b__0>d.MoveNext() in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 140
+[2026-06-01 10:34:17 INF] HTTP OPTIONS /api/v1/users/usr_Gt7zcpPMXn9b/role responded 204 in 0.3724 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000006","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:17 INF] HTTP PUT /api/v1/users/usr_Gt7zcpPMXn9b/role responded 200 in 39.5458 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000007","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:38 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"9f9d2699-479d-486d-8f97-fd2d4d3a05cf","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000008","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:38 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVE1DK55A:00000008","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:34:38 INF] HTTP POST /api/v1/auth/login responded 401 in 20.1146 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000008","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:48 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"9f9d2699-479d-486d-8f97-fd2d4d3a05cf","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVE1DK55A:00000009","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:48 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVE1DK55A:00000009","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:34:48 INF] HTTP POST /api/v1/auth/login responded 401 in 9.3840 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:00000009","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:50 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"9f9d2699-479d-486d-8f97-fd2d4d3a05cf","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVE1DK55A:0000000A","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:34:50 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVE1DK55A:0000000A","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVE1DK55A"}
+System.UnauthorizedAccessException: User account is disabled
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 186
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:34:50 INF] HTTP POST /api/v1/auth/login responded 401 in 9.5052 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVE1DK55A:0000000A","ConnectionId":"0HNLVVE1DK55A"}
+[2026-06-01 10:51:51 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-01 10:51:52 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-01 10:51:53 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-01 10:51:53 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-06-01 10:52:13 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 2.8076 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000001","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:14 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:14 INF] HTTP POST /api/v1/auth/login responded 200 in 685.8324 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000002","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:16 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.3707 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000003","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:16 INF] HTTP GET /api/v1/auth/users responded 200 in 120.3377 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000004","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:51 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0686 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000005","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:52 INF] User pdeleon registered successfully {"EventId":{"Id":1001,"Name":"LogUserRegistered"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3080be28-751a-4bae-b925-d59caef4e6f3","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:52 INF] HTTP POST /api/v1/auth/register responded 201 in 480.6140 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000006","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:52 INF] HTTP GET /api/v1/auth/users responded 200 in 14.3979 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000007","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:53 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"3080be28-751a-4bae-b925-d59caef4e6f3","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVOGLUKNF"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 a1e0cc1a2514c-963abebccefsm6432888241.13 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:52:53 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"3080be28-751a-4bae-b925-d59caef4e6f3","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVOGLUKNF"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 a1e0cc1a2514c-963abebccefsm6432888241.13 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:52:53 ERR] Failed to send verification email {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3080be28-751a-4bae-b925-d59caef4e6f3","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNLVVOGLUKNF"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 a1e0cc1a2514c-963abebccefsm6432888241.13 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 a1e0cc1a2514c-963abebccefsm6432888241.13 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendEmailVerificationAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 29
+   at AuthService.Application.Services.AuthService.<>c__DisplayClass9_0.<<RegisterAsync>b__0>d.MoveNext() in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 140
+[2026-06-01 10:52:58 INF] HTTP OPTIONS /api/v1/users/usr_VyrfWVhDDSpH/role responded 204 in 0.3785 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000008","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:52:58 INF] HTTP PUT /api/v1/users/usr_VyrfWVhDDSpH/role responded 200 in 43.8431 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:00000009","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:19 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000A","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:19 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNF:0000000A","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:53:19 INF] HTTP POST /api/v1/auth/login responded 401 in 126.3505 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000A","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:31 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000B","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:31 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNF:0000000B","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:53:31 INF] HTTP POST /api/v1/auth/login responded 401 in 116.4412 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000B","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:45 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000C","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:53:45 INF] HTTP POST /api/v1/auth/login responded 200 in 126.8198 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000C","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:55:06 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000D","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:55:06 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNF:0000000D","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNF"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 10:55:06 INF] HTTP POST /api/v1/auth/login responded 401 in 115.2108 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000D","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:55:18 INF] HTTP OPTIONS /api/v1/auth/forgot-password responded 204 in 0.0865 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000E","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:55:20 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000F","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNF"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a3b68647c7sm719339e0c.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:55:20 ERR] Failed to send email {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000F","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNF"}
+MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a3b68647c7sm719339e0c.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+[2026-06-01 10:55:20 ERR] Failed to send password reset email to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNF:0000000F","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNF"}
+System.InvalidOperationException: Failed to send email: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a3b68647c7sm719339e0c.6 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.4.5 Daily user sending limit exceeded. For more information on Gmail
+5.4.5 sending limits go to
+5.4.5  https://support.google.com/a/answer/166852 71dfb90a1353d-5a3b68647c7sm719339e0c.6 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.ParseDataResponse(SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 141
+   --- End of inner exception stack trace ---
+   at AuthService.Application.Services.EmailService.SendEmailAsync(String to, String subject, String body) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 171
+   at AuthService.Application.Services.EmailService.SendPasswordResetAsync(String email, String username, String token) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\EmailService.cs:line 51
+   at AuthService.Application.Services.AuthService.ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 379
+[2026-06-01 10:55:20 ERR] HTTP POST /api/v1/auth/forgot-password responded 503 in 1590.6030 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNF:0000000F","ConnectionId":"0HNLVVOGLUKNF"}
+[2026-06-01 10:59:02 INF] Email sent successfully {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNG:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNG"}
+[2026-06-01 10:59:03 INF] Email pipeline completed {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNG:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNG"}
+[2026-06-01 10:59:03 INF] Email processed {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNG:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNG"}
+[2026-06-01 10:59:03 INF] Password reset email sent to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNG:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNG"}
+[2026-06-01 10:59:03 INF] HTTP POST /api/v1/auth/forgot-password responded 200 in 1866.3085 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNG:00000001","ConnectionId":"0HNLVVOGLUKNG"}
+[2026-06-01 10:59:29 INF] Email sent successfully {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNH:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNH"}
+[2026-06-01 10:59:29 INF] Email pipeline completed {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNH:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNH"}
+[2026-06-01 10:59:29 INF] Email processed {"SourceContext":"AuthService.Application.Services.EmailService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNH:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNH"}
+[2026-06-01 10:59:29 INF] Password reset email sent to pdeleon-2021364@kinal.edu.gt {"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"a63aaeab-5815-482b-8bf7-5da741d2740a","ActionName":"AuthService.Api.Controllers.AuthController.ForgotPassword (AuthService.Api)","RequestId":"0HNLVVOGLUKNH:00000001","RequestPath":"/api/v1/auth/forgot-password","ConnectionId":"0HNLVVOGLUKNH"}
+[2026-06-01 10:59:29 INF] HTTP POST /api/v1/auth/forgot-password responded 200 in 1963.0234 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNH:00000001","ConnectionId":"0HNLVVOGLUKNH"}
+[2026-06-01 11:00:22 INF] HTTP OPTIONS /api/v1/auth/reset-password responded 204 in 0.1790 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000001","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:23 INF] HTTP POST /api/v1/auth/reset-password responded 200 in 45.1027 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000002","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:37 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0973 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000003","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:37 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNI:00000004","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:37 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNI:00000004","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 11:00:37 INF] HTTP POST /api/v1/auth/login responded 401 in 135.3691 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000004","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:39 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNI:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:39 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNI:00000005","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 11:00:39 INF] HTTP POST /api/v1/auth/login responded 401 in 108.0261 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000005","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:50 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNI:00000006","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:50 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNI:00000006","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 11:00:50 INF] HTTP POST /api/v1/auth/login responded 401 in 100.8753 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000006","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:56 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNI:00000007","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:00:56 INF] HTTP POST /api/v1/auth/login responded 200 in 196.8247 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000007","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:02:10 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5db647fa-e5b8-4afd-8420-733c65868e62","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNLVVOGLUKNI:00000008","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+[2026-06-01 11:02:10 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNLVVOGLUKNI:00000008","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNLVVOGLUKNI"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Application\Services\AuthService.cs:line 193
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Controllers\AuthController.cs:line 118
+   at lambda_method425(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\JavaScriptPMA\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-06-01 11:02:10 INF] HTTP POST /api/v1/auth/login responded 401 in 115.7747 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNLVVOGLUKNI:00000008","ConnectionId":"0HNLVVOGLUKNI"}
